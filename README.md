@@ -13,12 +13,6 @@ _A simple, stylish, and responsive color palette generator built with pure Vanil
   <img src="https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge" alt="Made with Love">
 </p>
 
-## 📸 Project Preview
-
-![Color Palette Generator Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=Color+Palette+Generator+Preview)
-
-_Replace this with an actual screenshot of your project_
-
 ## 💡 About The Project
 
 This project is a hands-on demonstration of core web development skills using only native technologies. It allows users to dynamically generate, manage, and copy color palettes. The goal was to create a useful tool while showcasing strong knowledge of **DOM manipulation**, **event handling**, and **responsive design** without relying on any external libraries or frameworks.
@@ -140,10 +134,6 @@ Contributions are what make the open-source community amazing! Any contributions
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📝 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 👨‍💻 Author
 
