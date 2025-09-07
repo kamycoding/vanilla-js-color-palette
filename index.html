@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamycoding - Color Palette Generator</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Color Palette Generator</h1>
+        <p>
+          Click a card to generate a new color. Click the hex code to copy it.
+        </p>
+      </header>
+
+      <div class="main-controls">
+        <div class="controls-wrapper">
+          <button id="remove-card-btn" title="حذف کارت">-</button>
+          <button id="generate-all-btn">Generate Palette</button>
+          <button id="add-card-btn" title="افزودن کارت">+</button>
+        </div>
+      </div>
+
+      <main id="palette-container"></main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="tagline">kamycoding 👨🏻‍💻</div>
+      <div class="buttons">
+        <a class="button" href="https://github.com/kamycoding" target="_blank"
+          >GitHub</a
+        >
+        <a class="button site" href="https://www.kamycoding.com" target="_blank"
+          >My Website</a
+        >
+      </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
