@@ -2,7 +2,8 @@
 
 🎨 Vanilla JS Color Palette Generator 🎨
 A simple, stylish, and responsive color palette generator built with pure Vanilla JavaScript.
-<br>
+
+</div>
 
 <p align="center">
 <a href="https://kamycoding.github.io/vanilla-js-color-palette/">
@@ -11,9 +12,8 @@ A simple, stylish, and responsive color palette generator built with pure Vanill
 <a href="https://github.com/kamycoding">
 <img src="https://www.google.com/search?q=https://img.shields.io/badge/GitHub-kamycoding-blue%3Fstyle%3Dfor-the-badge%26logo%3Dgithub" alt="GitHub Profile">
 </a>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/License-MIT-yellow.svg%3Fstyle%3Dfor-the-badge" alt="License: MIT">
 </p>
-
-</div>
 
 ▶️ Project in Action
 💡 About The Project
