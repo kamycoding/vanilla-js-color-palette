@@ -28,9 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const colorDisplay = cardElement.querySelector(".color-display");
     const hexCodeElement = cardElement.querySelector(".hex-code");
     const infoContainer = cardElement.querySelector(".color-info");
+
     const newColor = generateRandomHexColor();
+
     colorDisplay.style.backgroundColor = newColor;
     hexCodeElement.textContent = newColor.toUpperCase();
+
     infoContainer.style.backgroundColor = newColor;
     hexCodeElement.style.color = getContrastColor(newColor);
   }
@@ -39,14 +42,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const card = document.createElement("div");
     card.className = "color-card";
     card.innerHTML = `
-      <div class="color-display"></div>
-      <div class="color-info">
-          <p class="hex-code"></p>
-      </div>
-    `;
+            <div class="color-display"></div>
+            <div class="color-info">
+                <p class="hex-code"></p>
+            </div>
+        `;
+
     const colorDisplay = card.querySelector(".color-display");
     const hexCode = card.querySelector(".hex-code");
+
     colorDisplay.addEventListener("click", () => updateColorCard(card));
+
     hexCode.addEventListener("click", function () {
       navigator.clipboard.writeText(hexCode.textContent).then(() => {
         const originalText = hexCode.textContent;
@@ -56,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1500);
       });
     });
+
     updateColorCard(card);
     paletteContainer.appendChild(card);
   }

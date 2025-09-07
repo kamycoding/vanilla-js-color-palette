@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kamycoding - Color Palette Generator</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Color Palette Generator - kamycoding</title>
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <h1>Color Palette Generator</h1>
-        <p>
-          Click a card to generate a new color. Click the hex code to copy it.
-        </p>
-      </header>
-
-      <div class="main-controls">
-        <div class="controls-wrapper">
-          <button id="remove-card-btn" title="delete card">-</button>
-          <button id="generate-all-btn">Generate Palette</button>
-          <button id="add-card-btn" title="add card">+</button>
-        </div>
+    <header class="main-header">
+      <h1>Color Palette Generator</h1>
+      <p class="subtitle">
+        Click a card to generate a new color. Click the hex code to copy it.
+      </p>
+      <div class="controls">
+        <button id="add-card-btn" title="Add new card">+</button>
+        <button id="generate-all-btn">Generate All</button>
+        <button id="remove-card-btn" title="Remove last card">-</button>
       </div>
+    </header>
 
-      <main id="palette-container"></main>
-    </div>
+    <main id="palette-container"></main>
 
     <footer class="site-footer">
-      <div class="tagline">kamycoding 👨🏻‍💻</div>
+      <div class="tagline">@kamycoding 👨🏻‍💻</div>
       <div class="buttons">
         <a class="button" href="https://github.com/kamycoding" target="_blank"
           >GitHub</a
+        >
+        <a
+          class="button source"
+          href="https://github.com/kamycoding/vanilla-js-color-palette"
+          target="_blank"
+          >Source Code</a
         >
         <a class="button site" href="https://www.kamycoding.com" target="_blank"
           >My Website</a

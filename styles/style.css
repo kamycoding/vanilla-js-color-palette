@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -11,147 +11,129 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  user-select: none;
+  align-items: center;
+  padding: 2rem 1rem;
 }
 
-.container {
-  max-width: 1200px;
+.main-header {
+  text-align: center;
+  margin-bottom: 2rem;
   width: 100%;
-  margin: 0 auto;
-  padding: 30px 20px;
-  flex-grow: 1;
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.header h1 {
+h1 {
   font-size: 2.5rem;
-  color: #ff9800;
   margin-bottom: 0.5rem;
+  color: #ff9800;
 }
 
-.header p {
-  font-size: 1.1rem;
+.subtitle {
+  font-size: 1rem;
   color: #ccc;
+  margin-bottom: 1.5rem;
 }
 
-.main-controls {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.controls-wrapper {
+.controls {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-#generate-all-btn {
+.controls button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 8px;
   font-family: "JetBrains Mono", monospace;
   font-size: 1rem;
   font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.6rem 1.2rem;
+}
+
+.controls button:hover {
+  background-color: #444;
+  border-color: #777;
+}
+
+#generate-all-btn {
   background-color: #ff9800;
   color: #1f1f1f;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  border-color: #ff9800;
 }
 
 #generate-all-btn:hover {
   background-color: #ffa733;
-  transform: translateY(-2px);
+  border-color: #ffa733;
 }
 
 #add-card-btn,
 #remove-card-btn {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 1.8rem;
-  line-height: 1;
-  font-weight: bold;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  background-color: transparent;
-  color: #ccc;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-#add-card-btn:hover {
-  background-color: #00bcd4;
-  border-color: #00bcd4;
-  color: #000;
-  transform: scale(1.1);
-}
-
-#remove-card-btn:hover {
-  background-color: #e94560;
-  border-color: #e94560;
-  color: #fff;
-  transform: scale(1.1);
+  font-size: 1.5rem;
+  padding: 0.3rem 1rem;
 }
 
 #palette-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  flex-grow: 1;
 }
 
 .color-card {
-  border-radius: 15px;
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 280px;
-  background-color: #2a2a2a;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
 }
 
 .color-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 .color-display {
-  flex-grow: 1;
+  height: 200px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .color-info {
-  padding: 15px;
+  padding: 1rem;
   text-align: center;
-  transition: background-color 0.3s ease;
 }
 
 .hex-code {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  padding: 8px;
-  border-radius: 5px;
   cursor: pointer;
-  display: inline-block;
-  transition: color 0.3s ease;
+  user-select: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.hex-code:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .site-footer {
-  padding: 2rem;
+  width: 100%;
   text-align: center;
-  background-color: #111;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
 }
 
 .tagline {
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
   color: #ff9800;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .buttons {
@@ -169,11 +151,11 @@ a.button {
   border-radius: 6px;
   font-weight: bold;
   transition: all 0.3s ease;
+  font-size: 0.9rem;
 }
 
 a.button:hover {
   background-color: #ffa733;
-  transform: translateY(-2px);
 }
 
 a.button.site {
@@ -183,4 +165,13 @@ a.button.site {
 
 a.button.site:hover {
   background-color: #26c6da;
+}
+
+a.button.source {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+a.button.source:hover {
+  background-color: #5cb85c;
 }
