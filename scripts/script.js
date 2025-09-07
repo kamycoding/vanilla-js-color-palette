@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hexCode.addEventListener("click", function () {
       navigator.clipboard.writeText(hexCode.textContent).then(() => {
         const originalText = hexCode.textContent;
-        hexCode.textContent = "کپی شد!";
+        hexCode.textContent = "Copied!";
         setTimeout(() => {
           hexCode.textContent = originalText;
         }, 1500);
