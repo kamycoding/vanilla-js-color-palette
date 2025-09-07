@@ -139,7 +139,7 @@ Contributions are what make the open-source community amazing! Any contributions
 
 **Kamy** - [@kamycoding](https://github.com/kamycoding)
 
-Project Link: [https://github.com/kamycoding/vanilla-js-color-palette](https://github.com/kamycoding/vanilla-js-color-palette)
+Project Link: [https://kamycoding.github.io/vanilla-js-color-palette/](https://kamycoding.github.io/vanilla-js-color-palette/)
 
 ## 🙏 Acknowledgments
 
